@@ -1,0 +1,6 @@
+[Unit]
+Description=Sleep Enforcer countdown
+
+[Service]
+Type=simple
+ExecStart=%h/.local/bin/sleep_enforcer

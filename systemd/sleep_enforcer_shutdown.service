@@ -1,0 +1,6 @@
+[Unit]
+Description=Sleep Enforcer forced shutdown
+
+[Service]
+Type=oneshot
+ExecStart=/usr/bin/systemctl poweroff

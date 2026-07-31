@@ -1,0 +1,9 @@
+[Unit]
+Description=Force shutdown at 00:20
+
+[Timer]
+OnCalendar=*-*-* 00:20:00
+AccuracySec=1s
+
+[Install]
+WantedBy=timers.target
