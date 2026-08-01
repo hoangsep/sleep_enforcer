@@ -20,7 +20,7 @@ use eframe::egui::{
 };
 
 const SHUTDOWN_HOUR: u32 = 0;
-const SHUTDOWN_MINUTE: u32 = 5;
+const SHUTDOWN_MINUTE: u32 = 20;
 
 struct SleepEnforcer {
     shutdown_at: DateTime<Local>,
@@ -214,7 +214,7 @@ fn main() -> eframe::Result {
     let options = eframe::NativeOptions {
         viewport: egui::ViewportBuilder::default()
             .with_title("Sleep Enforcer")
-            .with_app_id("sleep-enforcer")
+            .with_app_id("sleep_enforcer")
             .with_fullscreen(true)
             .with_always_on_top()
             .with_decorations(false)
